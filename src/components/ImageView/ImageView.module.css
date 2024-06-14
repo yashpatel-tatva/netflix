@@ -1,0 +1,84 @@
+.maindiv{
+    width: 100vw;
+    height: 60vh;
+}
+
+.infodiv{
+    padding-top: 5%;
+    padding-left: 7%;
+    color: white;
+    width: 45%;
+    height: 60%;
+    position: relative;
+    text-shadow: 1px 1px black;
+}
+
+.owner{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.name{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.description{
+    display: flex;
+    gap: 3rem;
+}
+
+.rating{
+    color: green;
+    font-weight: 800;
+}
+
+.seasoncount , .releaseyear{
+    color: rgba(255, 255, 255, 0.603);;
+}
+
+
+.quality{
+    padding: 2px 10px;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    border-radius: 5%;
+    color: rgba(255, 255, 255, 0.603);;
+}
+
+.imdb{
+    padding: 2px 2px;
+    font-weight: 700;
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    border-radius: 5%;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.storyline{
+    margin-top: 3%;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.603);
+    font-size: 1.25rem;
+}
+
+.producerslist{
+    margin-top: 3%;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.603);
+    font-style: italic;
+    font-size: 1.25rem;
+}
+.type{
+    width: 50%;
+    color: rgba(255, 255, 255, 0.603);
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
+.playbtndiv{
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+}

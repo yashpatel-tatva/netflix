@@ -1,0 +1,26 @@
+.cardimg{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.card{
+    background-color: transparent;
+}
+.cardimg:hover , .cardimg:focus {
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+    transition: border ;
+}
+
+button:focus {
+    outline: none !important;
+    border: 3px solid red !important;
+}
