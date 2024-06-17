@@ -5,22 +5,13 @@
 }
 .populertitle {
   padding-left: 7%;
-  margin-top: -10px;
+  margin-top: 10px;
   color: white;
   font-family: monospace;
   font-size: 1.75rem;
   font-weight: 900;
 }
-.populerscroll{
-  margin-top: 2%;
-  display: flex;
-  overflow-x: scroll;
-  gap: 15px;
-}
 
-::-webkit-scrollbar{
-  width: 0px;
-}
 
 .recentlywatched{
   padding-left: 7%; 

@@ -1,0 +1,29 @@
+.populerscroll {
+    margin-top: 2%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    scroll-behavior: smooth !important;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scrollbtns{
+    position: absolute;
+    background-color: transparent;
+    color: red;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 5%;
+    transition: 0.5s;
+    opacity: 0;
+    backdrop-filter: blur(10px);
+}
+
+.scrollbtns:hover{
+    opacity: 1;
+}

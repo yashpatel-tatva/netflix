@@ -82,3 +82,6 @@
     bottom: 0;
     right: 25%;
 }
+.playbtn:hover{
+    background-color: black !important;
+}

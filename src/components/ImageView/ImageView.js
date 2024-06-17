@@ -27,9 +27,9 @@ const ImageView = ({ data, handlerecentplayed }) => {
                     <div className={styles.storyline}>{data.StoryLine}</div>
                     <div className={styles.producerslist}>{data.Producerslist}</div>
                     <div className={styles.type}>{data.Type}</div>
-                    <div className={styles.playbtndiv}>
-                        <Button sx={{backgroundColor : 'red' ,color : 'white'}} onClick={() => handlerecentplayed(data.Id)} startIcon={<PlayCircleFilledOutlinedIcon sx={{color : 'white'}}/>}>Play</Button>
-                    </div>
+                    {/* <div className={styles.playbtndiv}>
+                        <Button className={styles.playbtn} sx={{backgroundColor : 'red' ,color : 'white'}} onClick={() => handlerecentplayed(data.Id)} startIcon={<PlayCircleFilledOutlinedIcon sx={{color : 'white'}}/>}>Play</Button>
+                    </div> */}
                 </div>
             </Box>
         </div>

@@ -12,15 +12,16 @@
     margin: 0px;
 }
 
-button {
+.card {
     border: none;
     outline: none;
     padding: 0px;
     margin: 0px;
     transition: border ;
+    border: 3px solid transparent !important;
 }
 
-button:focus {
+.card:focus {
     outline: none !important;
     border: 3px solid red !important;
 }

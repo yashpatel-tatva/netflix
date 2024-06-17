@@ -1,9 +1,10 @@
 import './App.css';
 import movieList from './DataStore/datalist';
-import { useState } from 'react';
-import React, { useEffect, useRef, forwardRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import ImageView from './components/ImageView/ImageView';
 import Datacard from './components/Datacard/Datacard';
+import ScrollContainer from './components/ScrollContainer/ScrollContainer';
+import DetailPopup from './components/DetailPopup/DetailPopup';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   const [selectedMovieIndexFromRecent, setSelectedMovieIndexFromRecent] = useState(1);
 
   const [selectedMovie, setSelectedMovie] = useState(movieList[0]);
-  
+
   const refs = movieList.reduce((acc, val) => {
     acc[val.Id] = React.createRef();
     return acc;
@@ -29,7 +30,8 @@ function App() {
   }
 
   const [recentId, setrecentId] = useState([]);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currMovie, setCurrMovie] = useState(null);
   // For popular list
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -54,8 +56,8 @@ function App() {
   // For recently watched list
   useEffect(() => {
     const handleKeyDown = (event) => {
-      if(recentId.length == 0){
-          return ;
+      if (recentId.length == 0) {
+        return;
       }
       const currentIndex = recentId.findIndex(Id => Id === selectedMovieIndexFromRecent);
       if (event.key === 'ArrowRight') {
@@ -75,34 +77,44 @@ function App() {
     recentrefs[selectedMovieIndexFromRecent].current && recentrefs[selectedMovieIndexFromRecent].current.focus();
   }, [selectedMovieIndexFromRecent]);
 
+  function getmoviehover(movie) {
+    setCurrMovie(movie);
+  }
+  function showmodal() {
+    setIsModalOpen(!isModalOpen);
+  }
+  
   return (
     <div className="App">
-      <ImageView  data={selectedMovie}  handlerecentplayed={addinrecentarray}></ImageView>
+      {isModalOpen && <DetailPopup movie={currMovie}  modalshow={showmodal}/>}
+      <ImageView data={selectedMovie} handlerecentplayed={addinrecentarray}></ImageView>
       <div className='populertitle'>Populer On Netflix</div>
-      <div className='populerscroll'>
+      <ScrollContainer>
         {movieList.map((movie) => (
           <Datacard
             key={movie.Id}
             data={movie}
-            onFocus={() => {setSelectedMovieIndex(movie.Id) ; setSelectedMovie(movie);}}
+            onFocus={() => { setSelectedMovieIndex(movie.Id); setSelectedMovie(movie); }}
+            modalshow={showmodal}
+            getmoviehover={getmoviehover}
             ref={refs[movie.Id]}
           ></Datacard>
         ))}
-      </div>
+      </ScrollContainer>
       <div className='recentlywatched'>Recently Watched</div>
-      <div className='recentlywatchedscroll'>
+      <ScrollContainer>
         {recentId.map((Id) => {
           var movie = movieList.find(x => x.Id === Id)
           return (
             <Datacard
               key={movie.Id}
               data={movie}
-              onFocus={() => {setSelectedMovieIndexFromRecent(movie.Id); setSelectedMovie(movie);}}
+              onFocus={() => { setSelectedMovieIndexFromRecent(movie.Id); setSelectedMovie(movie); }}
               ref={recentrefs[movie.Id]}
             ></Datacard>
           )
         })}
-      </div>
+      </ScrollContainer>
     </div>
   );
 }
