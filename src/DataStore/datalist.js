@@ -11,7 +11,8 @@ const movieList = [
         "StoryLine": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
         "Producerslist": "Winona Ryder, David Harbour, Matthew Modine",
         "Type": ["TV Shows", "TV Sci-Fi & Fantasy", "Teen TV Shows"],
-        "ImgUrl": "https://www.denofgeek.com/wp-content/uploads/2022/05/Stranger-Things-Season-3-poster-cropped.jpeg?resize=768%2C432"
+        "ImgUrl": "https://www.denofgeek.com/wp-content/uploads/2022/05/Stranger-Things-Season-3-poster-cropped.jpeg?resize=768%2C432",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     },
     {
         "Id" : 2,
@@ -24,7 +25,8 @@ const movieList = [
         "StoryLine": "In a post-apocalyptic world",
         "Producerslist": "Sergei Pawling",
         "Type": "Drama|Mystery|Thriller",
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNMhRkVBrLRQsLIDDoRO_A_h96FXgNA3Pvw&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuNMhRkVBrLRQsLIDDoRO_A_h96FXgNA3Pvw&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
     },
     {
         "Id" : 3,
@@ -38,7 +40,8 @@ const movieList = [
         "StoryLine": "A group of rebels fight against a tyrannical government to restore freedom",
         "Producerslist": "Karlan Schaben",
         "Type": "Documentary",
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6ls8tldTPTWEyWVNemIEB49eWmgYeZDFrw&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs6ls8tldTPTWEyWVNemIEB49eWmgYeZDFrw&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
     },
     {
         "Id" : 4,
@@ -52,7 +55,8 @@ const movieList = [
         "StoryLine": "An ancient prophecy foretells of a hero who will defeat the dark lord",
         "Producerslist": "Gasper Dominguez",
         "Type": "Horror|Sci-Fi",
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT687iUCHVNzEk83yZF31rGsg_hv6CvP5gZCA&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT687iUCHVNzEk83yZF31rGsg_hv6CvP5gZCA&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
     },
     {
         "Id" : 5,
@@ -66,7 +70,8 @@ const movieList = [
         "StoryLine": "A scientist creates a sentient AI that threatens to destroy humanity",
         "Producerslist": "Cristen Szanto",
         "Type": "Action|Drama|Romance",
-        "ImgUrl": "https://dooleyonline.typepad.com/.a/6a00e551a4e0f388330192acc62bc9970d-pi"
+        "ImgUrl": "https://dooleyonline.typepad.com/.a/6a00e551a4e0f388330192acc62bc9970d-pi",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
     },
     {
         "Id" : 6,
@@ -80,7 +85,8 @@ const movieList = [
         "StoryLine": "A group of friends discover a hidden treasure map and set off on an adventure",
         "Producerslist": "Alexia Beakes",
         "Type": "Horror|Sci-Fi",
-        "ImgUrl": "https://chicagofilmscene.com/wp-content/uploads/2020/10/Evilspeak-2.jpg"
+        "ImgUrl": "https://chicagofilmscene.com/wp-content/uploads/2020/10/Evilspeak-2.jpg",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
     },
     {
         "Id" : 7,
@@ -94,7 +100,8 @@ const movieList = [
         "StoryLine": "A group of survivors must navigate a post-apocalyptic wasteland to find a new home",
         "Producerslist": "Gerri Hamper",
         "Type": "Drama|Musical",
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR59dVU4J5SaviDY9eyzJgiCSAg97D-2M4bg&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR59dVU4J5SaviDY9eyzJgiCSAg97D-2M4bg&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
     },
     {
         "Id" : 8,
@@ -108,7 +115,8 @@ const movieList = [
         "StoryLine": "A group of time travelers must prevent a catastrophic event from altering the timeline",
         "Producerslist": "Teddy Sturror",
         "Type": "Action|Crime|Thriller",
-        "ImgUrl": "https://facts.net/wp-content/uploads/2023/10/40-facts-about-the-movie-judgment-night-1698314176.jpg"
+        "ImgUrl": "https://facts.net/wp-content/uploads/2023/10/40-facts-about-the-movie-judgment-night-1698314176.jpg",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
     },
     {
         "Id" : 9,
@@ -122,7 +130,8 @@ const movieList = [
         "StoryLine": "The hero embarks on a quest to save the kingdom from an evil sorcerer",
         "Producerslist": "Josiah Angric",
         "Type": "Drama",
-        "ImgUrl": "https://i.pinimg.com/originals/1d/40/c8/1d40c85699ef4d47894169c83e30b2aa.jpg"
+        "ImgUrl": "https://i.pinimg.com/originals/1d/40/c8/1d40c85699ef4d47894169c83e30b2aa.jpg",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
     },
     {
         "Id" : 10,
@@ -136,7 +145,8 @@ const movieList = [
         "StoryLine": "A group of hackers uncover a government conspiracy that threatens freedom",
         "Producerslist": "Tedra Chadwick",
         "Type": "Children|Comedy",
-        "ImgUrl": "https://m.media-amazon.com/images/M/MV5BMmQ1OWRmYmQtNGY2MC00MDA2LWIxZmMtOTk0ZTIyMWRkZDhiXkEyXkFqcGdeQXVyMTUxODIyNzk@._V1_FMjpg_UX1000_.jpg"
+        "ImgUrl": "https://m.media-amazon.com/images/M/MV5BMmQ1OWRmYmQtNGY2MC00MDA2LWIxZmMtOTk0ZTIyMWRkZDhiXkEyXkFqcGdeQXVyMTUxODIyNzk@._V1_FMjpg_UX1000_.jpg",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     },
     {
         "Id" : 11,
@@ -150,7 +160,8 @@ const movieList = [
         "StoryLine": "A group of time travelers must prevent a catastrophic event from altering the timeline",
         "Producerslist": "Angie Hulburd",
         "Type": "Comedy|Drama|Romance",
-        "ImgUrl": "https://m.media-amazon.com/images/S/pv-target-images/4eea791a57b2ba8950573d8c619c760aaea2994e11caf460324eac3c7f61f221.jpg"
+        "ImgUrl": "https://m.media-amazon.com/images/S/pv-target-images/4eea791a57b2ba8950573d8c619c760aaea2994e11caf460324eac3c7f61f221.jpg",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
     },
     {
         "Id" : 12,
@@ -164,7 +175,8 @@ const movieList = [
         "StoryLine": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
         "Producerslist": "Henry Cavill, Freya Allan, Anya Chalotra",
         "Type": ["TV Shows", "Fantasy TV Shows", "TV Dramas"],
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3zGrzXYCJkekNjLztZPg7_TsxXoDTLcX6kw&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3zGrzXYCJkekNjLztZPg7_TsxXoDTLcX6kw&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
     },
     {
         "Id" : 13,
@@ -178,7 +190,8 @@ const movieList = [
         "StoryLine": "A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.",
         "Producerslist": "Kevin Spacey, Robin Wright",
         "Type": ["TV Shows", "Political TV Shows", "TV Dramas"],
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3sb1Cn9SR6SRlc0pceGvWNlF3z89B_Jb2Og&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3sb1Cn9SR6SRlc0pceGvWNlF3z89B_Jb2Og&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
     },
     {
         "Id" : 14,
@@ -192,7 +205,8 @@ const movieList = [
         "StoryLine": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
         "Producerslist": "Karl Urban, Jack Quaid, Antony Starr",
         "Type": ["TV Shows", "Action & Adventure", "TV Dramas"],
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilef3yD0mh_83bKeAq7z7N5Dn9evuCOHOBQ&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilef3yD0mh_83bKeAq7z7N5Dn9evuCOHOBQ&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     },
     {
         "Id" : 15,
@@ -206,7 +220,8 @@ const movieList = [
         "StoryLine": "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
         "Producerslist": "Elisabeth Moss, Yvonne Strahovski",
         "Type": ["TV Shows", "Sci-Fi & Fantasy", "TV Dramas"],
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQN3uc69tPR3FRtMfiPzzbvrIabqTX7T6Mwg&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQN3uc69tPR3FRtMfiPzzbvrIabqTX7T6Mwg&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     },
     {
         "Id" : 16,
@@ -220,7 +235,8 @@ const movieList = [
         "StoryLine": "An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
         "Producerslist": "Daniel Lapaine, Hannah John-Kamen, Michaela Coel",
         "Type": ["TV Shows", "Sci-Fi & Fantasy", "TV Thrillers"],
-        "ImgUrl": "https://m.media-amazon.com/images/M/MV5BZTgyNTBkNzctN2I3NC00NTA1LWJiMDMtYzA2MmYyZjc1NWQzXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
+        "ImgUrl": "https://m.media-amazon.com/images/M/MV5BZTgyNTBkNzctN2I3NC00NTA1LWJiMDMtYzA2MmYyZjc1NWQzXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
     },
     {
         "Id" : 17,
@@ -234,7 +250,8 @@ const movieList = [
         "StoryLine": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
         "Producerslist": "Pedro Pascal, Gina Carano",
         "Type": ["TV Shows", "Action & Adventure", "Sci-Fi & Fantasy"],
-        "ImgUrl": "https://cdn.europosters.eu/image/hp/50758.jpg"
+        "ImgUrl": "https://cdn.europosters.eu/image/hp/50758.jpg",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
     },
     {
         "Id" : 18,
@@ -248,7 +265,8 @@ const movieList = [
         "StoryLine": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar.",
         "Producerslist": "Pedro Pascal, Wagner Moura",
         "Type": ["TV Shows", "Crime TV Shows", "TV Dramas"],
-        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQIZDO7RoSXBMh5dx_VN5WIIF876NvOkvEQg&s"
+        "ImgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQIZDO7RoSXBMh5dx_VN5WIIF876NvOkvEQg&s",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     },
     {
         "Id" : 19,
@@ -262,7 +280,8 @@ const movieList = [
         "StoryLine": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
         "Producerslist": "Emilia Clarke, Peter Dinklage",
         "Type": ["TV Shows", "Fantasy TV Shows", "TV Dramas"],
-        "ImgUrl": "https://cdn.europosters.eu/image/hp/65920.jpg"
+        "ImgUrl": "https://cdn.europosters.eu/image/hp/65920.jpg",
+        "Trailer" : "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
     },
 ]
 

@@ -1,6 +1,7 @@
 .maindiv{
     width: 100vw;
     height: 60vh;
+    position: relative;
 }
 
 .infodiv{
@@ -12,7 +13,14 @@
     position: relative;
     text-shadow: 1px 1px black;
 }
-
+.actiondiv{
+    padding-bottom: 5%;
+    padding-right: 7%;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    text-shadow: 1px 1px black;
+}
 .owner{
     font-size: 2rem;
     font-weight: 700;
@@ -75,13 +83,4 @@
     color: rgba(255, 255, 255, 0.603);
     font-style: italic;
     font-size: 1.25rem;
-}
-
-.playbtndiv{
-    position: absolute;
-    bottom: 0;
-    right: 25%;
-}
-.playbtn:hover{
-    background-color: black !important;
 }

@@ -1,29 +1,51 @@
 import { forwardRef } from 'react'
 import styles from './Datacard.module.css'
-import DetailPopup from '../DetailPopup/DetailPopup'
+import React, { useState, useEffect, useCallback } from 'react';
 
-const Datacard = forwardRef(({ data, onFocus, modalshow, getmoviehover }, ref) => {
-  let timeoutId;
-  function handleMouseEnter() {
-    timeoutId = setTimeout(() => {
+const Datacard = forwardRef(({ data, onFocus, modalshow, getmoviehover }, refs) => {
+  const [timeoutId, setTimeoutId] = useState(null);
+
+  const handleMouseEnter = useCallback(() => {
+    const id = setTimeout(() => {
       getmoviehover(data);
-      modalshow(true);
-    }, 1000); 
-  }
-  function handleMouseLeave() {
-    clearTimeout(timeoutId); 
-  }
+      modalshow();
+    }, 1000);
+    setTimeoutId(id);
+  }, [data, getmoviehover, modalshow]);
+
+  const handleMouseLeave = useCallback(() => {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+      setTimeoutId(null);
+    }
+  }, [timeoutId]);
+
+  const handleFocusOrClick = useCallback(() => {
+    handleMouseLeave();
+    onFocus();
+  }, [handleMouseLeave, onFocus]);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [timeoutId]);
+
   return (
-    <button 
+    <button
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onFocus={onFocus} 
-      className={styles.card} 
-      ref={ref}
+      onFocus={handleFocusOrClick}
+      onClick={handleFocusOrClick}
+      onDoubleClick={() => { getmoviehover(data); modalshow(); }}
+      className={styles.card}
+      ref={refs}
     >
-      <img src={data.ImgUrl} draggable='false' className={styles.cardimg}></img>
+      <img src={data.ImgUrl} draggable='false' className={styles.cardimg} alt={data.title} />
     </button>
-  )
-})
+  );
+});
 
 export default Datacard;

@@ -31,14 +31,14 @@ function ScrollContainer({ children }) {
         if (!isDragging) return;
         e.preventDefault();
         const x = e.pageX - scrollRef.current.offsetLeft;
-        const walk = (x - startX) *2;
+        const walk = (x - startX) * 2;
         scrollRef.current.scrollLeft = scrollLeft - walk;
     };
 
     return (
         <div style={{ display: 'flex', gap: '15px', position: 'relative' }}>
             <button style={{ left: '0px' }} className={styles.scrollbtns} onClick={() => scroll('left')}>
-                <ArrowBackIosIcon color='white' fontSize='large'/>
+                <ArrowBackIosIcon color='white' fontSize='large' />
             </button>
             <div
                 ref={scrollRef}
@@ -51,7 +51,7 @@ function ScrollContainer({ children }) {
                 {children}
             </div>
             <button style={{ right: '0px' }} className={styles.scrollbtns} onClick={() => scroll('right')}>
-                <ArrowForwardIosIcon color='white' fontSize='large'/>
+                <ArrowForwardIosIcon color='white' fontSize='large' />
             </button>
         </div>
     );

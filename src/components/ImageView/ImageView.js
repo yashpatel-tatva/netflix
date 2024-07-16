@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from './ImageView.module.css'
-import { Box, Button } from "@mui/material"
+import { Box , Button, Stack } from "@mui/material"
 import PlayCircleFilledOutlinedIcon from '@mui/icons-material/PlayCircleFilledOutlined';
+import TheatersIcon from '@mui/icons-material/Theaters';
+import InfoIcon from '@mui/icons-material/Info';
 
-const ImageView = ({ data, handlerecentplayed }) => {
+const ImageView = ({ data, handlerecentplayed ,modalShow ,getMovieHover  , isRecent}) => {
     return (
         <div className={styles.maindiv}>
             <Box sx={{
@@ -27,9 +29,13 @@ const ImageView = ({ data, handlerecentplayed }) => {
                     <div className={styles.storyline}>{data.StoryLine}</div>
                     <div className={styles.producerslist}>{data.Producerslist}</div>
                     <div className={styles.type}>{data.Type}</div>
-                    {/* <div className={styles.playbtndiv}>
-                        <Button className={styles.playbtn} sx={{backgroundColor : 'red' ,color : 'white'}} onClick={() => handlerecentplayed(data.Id)} startIcon={<PlayCircleFilledOutlinedIcon sx={{color : 'white'}}/>}>Play</Button>
-                    </div> */}
+                </div>
+                <div className={styles.actiondiv}>
+                    <Stack direction={'row'} spacing={2}>
+                        <Button sx={{backgroundColor : 'red' ,color : 'white'}} onClick={() => handlerecentplayed(data.Id)} startIcon={<PlayCircleFilledOutlinedIcon sx={{color : 'white'}}/>}>{isRecent ? <span>Resume</span> : <span>Play</span>}</Button>
+                        <Button sx={{backgroundColor : 'white' ,color : 'black'}} onClick={() => {getMovieHover(data) ; modalShow();}} startIcon={<InfoIcon sx={{color : 'black'}}/>}>info</Button>
+                        <Button sx={{backgroundColor : 'white' ,color : 'black'}} onClick={() => window.open(data.Trailer, "_blank")} startIcon={<TheatersIcon sx={{color : 'black'}}/>}>Trailer</Button>
+                    </Stack>
                 </div>
             </Box>
         </div>
